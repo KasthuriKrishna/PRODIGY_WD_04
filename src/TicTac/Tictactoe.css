@@ -1,0 +1,56 @@
+/* App.css */
+.game {
+  position: relative; /* Ensure relative positioning */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("https://img1.picmix.com/output/stamp/normal/6/7/0/8/1918076_a6aa7.gif");
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover;
+}
+
+.page {
+  background-color: #DC4D01; /* Set background to transparent */
+  position: relative; /* Ensure relative positioning for absolute positioning */
+}
+
+  .game-board {
+    
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    
+  }
+
+  .board-row:after {
+    clear: both;
+    content: "";
+    display: table;
+    
+  }
+  
+  .square {
+    
+    float: left;
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    border: 1px solid #999;
+    cursor: pointer;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  .square:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .status {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold;
+  }
